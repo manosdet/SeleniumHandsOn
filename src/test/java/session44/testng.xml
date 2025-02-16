@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="groupinguite">
+  <test thread-count="5" name="groupingest">
+  <groups>
+  <run> 
+  <include name="functional"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="session44.LoginTests"/>
+            <class name="session44.SignupTests"/>
+
+      <class name="session44.PaymentTest"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
