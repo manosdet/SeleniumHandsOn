@@ -12,8 +12,8 @@ public class HandleAuthenticatedPopup {
 				
 		WebDriverWait mywait = new WebDriverWait(driver,Duration.ofSeconds(10));
 				//Syntax:
-			//	driver.get("http://Username:password@the-internet.herokuapp.com/basic_auth");
-		driver.get("http://admin:admin@the-internet.herokuapp.com/basic_auth");
+				driver.get("http://Username:password@the-internet.herokuapp.com/basic_auth");
+		//driver.get("http://admin:admin@the-internet.herokuapp.com/basic_auth");
 		
 				driver.manage().window().maximize();
 	}

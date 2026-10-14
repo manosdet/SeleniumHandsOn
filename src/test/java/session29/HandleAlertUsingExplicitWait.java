@@ -17,11 +17,20 @@ public class HandleAlertUsingExplicitWait {
 				
 				driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 				driver.manage().window().maximize();
-			//1) Normal alert OK button 
+			
+			   
+				
 				driver.findElement(By.xpath("//button[normalize-space()='Click for JS Alert']")).click();
 				Thread.sleep(5000);
+				
+				
 				Alert myalert =	mywait.until(ExpectedConditions.alertIsPresent());//capture the alert window 
 				System.out.println(myalert.getText());
 				myalert.accept();
+				
+				
+				
+				
+				driver.close();
 	}
 }

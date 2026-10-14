@@ -20,7 +20,7 @@ public class HandleCheckboxes {
 		driver.manage().window().maximize();
 		
 		//1) Select specific checkbox
-		//driver.findElement(By.xpath("//input[@id='sunday']")).click();
+		driver.findElement(By.xpath("//input[id='sunday']")).click();
 		
 		//2)Select multiple check boxes  
 		
@@ -71,6 +71,8 @@ public class HandleCheckboxes {
 			checkboxes.get(i).click();
 			 }
 		}
+		 
+		 driver.close();
 		
 	}
 

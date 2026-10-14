@@ -36,6 +36,8 @@ public class SlideDemo {
 		
 		
 		System.out.println("Location of the max slider after moving  " + max_slider.getLocation());//(58,249)=(x,y)
+		//driver.close();
+		driver.quit();
 		
 	}
 
